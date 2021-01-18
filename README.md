@@ -1,28 +1,20 @@
-# hexo-asset-image
+# hexo-asset-image-for-hexo5
 
+Replace asset image to absolute path in Hexo. **Works fine with hexo 5.3.0, please feel free to use.**
 
-Give asset image in hexo a absolutely path automatically
+> **Tips**: Reference & fixed [hexo-asset-image](https://github.com/xcodebuild/hexo-asset-image) compatibility issues with hexo 5.
 
-# Usege
-
-```shell
-npm install hexo-asset-image --save
-```
-
-# Example
+## Usege
 
 ```shell
-MacGesture2-Publish
-├── apppicker.jpg
-├── logo.jpg
-└── rules.jpg
-MacGesture2-Publish.md
+npm install hexo-asset-image-for-hexo5 --save
 ```
 
-Make sure `post_asset_folder: true` in your `_config.yml`.
+## Example
 
-Just use `![logo](logo.jpg)` to insert `logo.jpg`.
+```shell
+├─Data-Structure
+└─Data-Structure.md
+```
 
-# History
-
-2018-04-18: support hexo-abbrlink
+> **Notice**: You must switch the `post_asset_folder:true` in `_config.yml`, then use `![infomation](diagram.png)` to reference `diagram.png`.
