@@ -1,6 +1,6 @@
 {
   "name": "hexo-asset-image-for-hexo5",
-  "version": "2.1.0",
+  "version": "2.1.5",
   "description": "Replace asset image to absolute path in hexo 5",
   "main": "index.js",
   "keywords": [
@@ -10,6 +10,8 @@
   ],
   "author": "Hank",
   "license": "MIT",
+  "homepage": "https://uinika.gitee.io",
+  "repository": "https://github.com/uinika/hexo-asset-image-for-hexo5",
   "dependencies": {
     "cheerio": "^0.22.0"
   }
