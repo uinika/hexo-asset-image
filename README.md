@@ -14,6 +14,7 @@ npm install hexo-asset-image-for-hexo5 --save
 
 ```shell
 ├─Data-Structure
+├────diagram.png
 └─Data-Structure.md
 ```
 
