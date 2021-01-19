@@ -1,6 +1,6 @@
 {
   "name": "hexo-asset-image-for-hexo5",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Replace asset image to absolute path in hexo 5",
   "main": "index.js",
   "keywords": [
