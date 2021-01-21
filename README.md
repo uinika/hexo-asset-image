@@ -18,4 +18,4 @@ npm install hexo-asset-image-for-hexo5 --save
 └─Data-Structure.md
 ```
 
-> **Notice**: You must switch the `post_asset_folder:true` in `_config.yml`, then use `![infomation](diagram.png)` to reference `diagram.png`.
+> **Notice**: You must switch the `post_asset_folder:true` in `_config.yml`, then use `![infomation](./Data-Structure/diagram.png)` to reference `diagram.png`.
