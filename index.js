@@ -13,20 +13,20 @@ hexo.extend.filter.register('after_post_render', function (data) {
       let key = toprocess[i];
       let $ = cheerio.load(data[key], { ignoreWhitespace: false, xmlMode: false, lowerCaseTags: false, decodeEntities: false });
       $('img').each(function () {
-        let  src_key = ''
+        let src_key = ''
         if ($(this).attr('src')) {
           src_key = 'src'
         } else if ($(this).attr('data-src')) {
           src_key = 'data-src'
         }
         if (src_key) {
-          let src = $(this).attr('data-src').replace('\\', '/');
+          let src = $(this).attr(src_key).replace('\\', '/');
           if (!(/http[s]*.*|\/\/.*/.test(src) || /^\s+\//.test(src) || /^\s*\/uploads|images\//.test(src))) {
             let linkArray = link.split('/').filter(function (elem) { return elem != ''; });
             let srcArray = src.split('/').filter(function (elem) { return elem != '' && elem != '.'; });
             if (srcArray.length > 1) { srcArray.shift(); }
             src = srcArray.join('/');
-            $(this).attr('data-src', config.root + link + src);
+            $(this).attr(src_key, config.root + link + src);
           }
         } else {
           console.info && console.info($(this));
