@@ -1,13 +1,13 @@
-# hexo-asset-image-for-hexo5
+# hexo-images-asset
 
-Replace asset image to absolute path in Hexo. **Works fine with hexo 5.3.0, please feel free to use.**
+Replace asset image to absolute path in Hexo. **Works fine with hexo 7.3.0, please feel free to use.**
 
 > **Tips**: Reference & fixed [hexo-asset-image](https://github.com/xcodebuild/hexo-asset-image) compatibility issues with hexo 5.
 
 ## Usege
 
 ```shell
-npm install hexo-asset-image-for-hexo5 --save
+npm install hexo-images-asset --save
 ```
 
 ## Example
